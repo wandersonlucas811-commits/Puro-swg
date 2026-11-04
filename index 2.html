@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PURO SWAG — Não seguimos tendências, criamos nosso próprio SWAG</title>
+<meta name="description" content="PURO SWAG: curadoria de moda masculina e feminina com os melhores achados da SHEIN. Não seguimos tendências, criamos nosso próprio SWAG.">
+<meta name="theme-color" content="#0A0A0A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER FIXO -->
+<header class="header">
+  <div class="container">
+    <a href="#topo" class="logo" aria-label="PURO SWAG, início">
+      <svg viewBox="0 0 24 32" aria-hidden="true"><path d="M14 0 0 18h9l-3 14L24 11h-9z" fill="#8FA6C4"/></svg>
+      <span>PURO <span class="azul">SWAG</span></span>
+    </a>
+    <nav class="nav" id="menu" aria-label="Menu principal">
+      <a href="#masculino">Masculino</a>
+      <a href="#feminino">Feminino</a>
+      <a href="#rodape">Sobre</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="topo">
+
+  <!-- BANNER 50/50 -->
+  <section class="hero" aria-label="Destaques">
+    <div class="hero-grid">
+      <article class="hero-lado" id="hero-masculino">
+        <img class="bg" id="img-masculino" alt="Coleção masculina PURO SWAG" loading="eager">
+        <div class="hero-conteudo">
+          <span class="tag">Coleção</span>
+          <h2>Masculino</h2>
+          <a class="btn" href="#masculino">Ver coleção</a>
+        </div>
+      </article>
+      <article class="hero-lado" id="hero-feminino">
+        <img class="bg" id="img-feminino" alt="Coleção feminina PURO SWAG" loading="eager">
+        <div class="hero-conteudo">
+          <span class="tag">Coleção</span>
+          <h2>Feminino</h2>
+          <a class="btn btn-ghost" href="#feminino">Ver coleção</a>
+        </div>
+      </article>
+    </div>
+    <div class="hero-slogan">Não seguimos tendências, criamos nosso próprio SWAG.</div>
+    <div class="hero-titulo">
+      <h1>Seu estilo. <span class="azul">Suas regras.</span></h1>
+    </div>
+  </section>
+
+  <!-- MASCULINO -->
+  <section class="secao" id="masculino" aria-labelledby="t-masc">
+    <div class="container">
+      <div class="secao-topo">
+        <h2 id="t-masc">Masculino</h2>
+        <p>Peças com atitude, selecionadas na SHEIN.</p>
+      </div>
+      <div class="grid" id="grid-masculino"></div>
+    </div>
+  </section>
+
+  <!-- FEMININO -->
+  <section class="secao" id="feminino" aria-labelledby="t-fem">
+    <div class="container">
+      <div class="secao-topo">
+        <h2 id="t-fem">Feminino</h2>
+        <p>Looks que ditam o próprio ritmo, direto da SHEIN.</p>
+      </div>
+      <div class="grid" id="grid-feminino"></div>
+    </div>
+  </section>
+
+</main>
+
+<!-- RODAPÉ AFILIADO -->
+<footer class="rodape" id="rodape">
+  <div class="container">
+    <div class="rodape-grid">
+      <div>
+        <a href="#topo" class="logo" aria-label="PURO SWAG">
+          <svg viewBox="0 0 24 32" aria-hidden="true"><path d="M14 0 0 18h9l-3 14L24 11h-9z" fill="#8FA6C4"/></svg>
+          <span>PURO <span class="azul">SWAG</span></span>
+        </a>
+        <p style="margin-top:12px">Não seguimos tendências, criamos nosso próprio SWAG.</p>
+      </div>
+      <div>
+        <h4>Navegar</h4>
+        <ul>
+          <li><a href="#masculino">Masculino</a></li>
+          <li><a href="#feminino">Feminino</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="mailto:contato@seudominio.com.br">contato@seudominio.com.br</a></li>
+          <li><a href="#" rel="noopener">@puroswag</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="aviso">
+      <strong>Aviso de afiliado:</strong> PURO SWAG é um site independente e participa do programa de afiliados da SHEIN.
+      Ao clicar em "Comprar na SHEIN" e finalizar uma compra, podemos receber uma comissão, sem nenhum custo adicional para você.
+      Preços, estoque e condições são de responsabilidade da SHEIN e podem mudar sem aviso.
+      PURO SWAG não é a SHEIN nem é afiliado oficialmente à marca além do programa de parceria.
+      <br>© <span id="ano"></span> PURO SWAG. Todos os direitos reservados.
+    </p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
